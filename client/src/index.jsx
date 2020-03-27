@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navbar from './components/Navbar';
+import FeaturesAndBenefits from './components/features_and_benefits/FeaturesAndBenefits';
 
-ReactDOM.render(<Navbar />,document.getElementById('root'))
+ReactDOM.render(<FeaturesAndBenefits />, document.getElementById('tabs'));

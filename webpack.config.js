@@ -1,20 +1,18 @@
 const path = require('path');
 
 const SRC_DIR = path.join(__dirname, 'client/src');
-const PUBLIC_DIR = path.join(__dirname, 'client/public');
+const DIST_DIR = path.join(__dirname, 'client/public');
 
 module.exports = {
-  mode: 'development',
-  watch: true,
-  entry: `${SRC_DIR}/index.jsx`,
+  entry: [`${SRC_DIR}/index.jsx`],
   output: {
     filename: 'bundle.js',
-    path: PUBLIC_DIR,
+    path: DIST_DIR,
   },
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         include: SRC_DIR,
         use: [
@@ -25,22 +23,17 @@ module.exports = {
             },
           },
         ],
-      },
+      }, 
       {
         test: /\.css$/,
         use: [
           'style-loader',
-          {
-            loader: "css-loader",
-            options: {
-              modules: true
-            }
-          }
+          'css-loader'
         ]
       }
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['*', '.js', '.jsx'],
   },
 };

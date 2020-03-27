@@ -1,0 +1,79 @@
+* {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  color: rgb(108, 111, 112);
+  line-height: 18px;
+}
+
+.tabs {
+  background: #FFFFFF;
+  border-color: #cccccc;
+  border-style: none none solid;
+  border-width: medium medium 1px;
+  margin: 0;
+  padding: 0 2.4px;
+}
+
+.tab_default {
+  background: #FFFFFF;
+  border-color: #cccccc;
+  border-style: solid solid none;
+  border-width: 1px 1px medium;
+  border-bottom: 0 !important;
+  margin-right: -1px;
+  height: 15.6px;
+  padding: 6px 12px;
+  /* float: left; */
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  zoom: 1;
+  text-align: -webkit-match-parent;
+  list-style: none;
+  white-space: nowrap;
+}
+
+li {
+  list-style-type: none;
+}
+
+h5 {
+  color: rgb(35, 31, 32);
+}
+
+.tab_selected {
+  font-weight: 700;
+  color: rgb(35, 31, 32);
+}
+
+.tab_unselected {
+  background: url(https://www.autozone.com/images/common/bg-heading.gif) repeat scroll 0 0 transparent;
+  color: rgb(244, 96, 0);
+}
+
+#tab-features {
+  padding: 12px 16.8px;
+}
+
+.simple {
+  font-size: 14px;
+}
+
+#prodspecs {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 6px;
+  border-bottom-color:rgb(204, 204, 204);
+  border-bottom-style:solid;
+  border-bottom-width:1px;
+  border-collapse:collapse;
+  display:table-cell;
+}
+
+.product_detail {
+  color: rgb(102, 102, 102);
+  font-weight: 700;
+  width: 232px;
+}
