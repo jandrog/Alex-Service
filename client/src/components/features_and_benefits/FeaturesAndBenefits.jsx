@@ -134,9 +134,9 @@ class FeaturesAndBenefits extends Component {
       productDetails: []
     };
 
-    const getFeatures = Axios.get(`http://127.0.0.1:8086/api/features_benefits/${ productID }/features`);
-    const getBenefits = Axios.get(`http://127.0.0.1:8086/api/features_benefits/${ productID }/benefits`);
-    const getProductDetails = Axios.get(`http://127.0.0.1:8086/api/features_benefits/${ productID }/product_details`);
+    const getFeatures = Axios.get(`http://alexservice-env.eba-mwr4bchv.us-east-2.elasticbeanstalk.com/${ productID }/features`); //Axios.get(`http://127.0.0.1:8086/api/features_benefits/${ productID }/features`);
+    const getBenefits = Axios.get(`http://alexservice-env.eba-mwr4bchv.us-east-2.elasticbeanstalk.com/${ productID }/benefits`); //Axios.get(`http://127.0.0.1:8086/api/features_benefits/${ productID }/benefits`);
+    const getProductDetails = Axios.get(`http://alexservice-env.eba-mwr4bchv.us-east-2.elasticbeanstalk.com/${ productID }/product_details`); //Axios.get(`http://127.0.0.1:8086/api/features_benefits/${ productID }/product_details`);
 
     Promise.all([getFeatures, getBenefits, getProductDetails])
       .then(results => {
