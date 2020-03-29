@@ -5,17 +5,17 @@ CREATE DATABASE arrtozone;
 USE arrtozone;
 
 CREATE TABLE features (
-    product_id INT PRIMARY KEY,
+    productID INT PRIMARY KEY,
     description TEXT NOT NULL
 );
 
 CREATE TABLE benefits (
-    product_id INT,
+    productID INT,
     description TEXT NOT NULL
 );
 
 CREATE TABLE product_details (
-    product_id INT,
+    productID INT,
     detail VARCHAR(50),
     description VARCHAR(150) NOT NULL
 );

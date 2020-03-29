@@ -51,7 +51,8 @@ h5 {
   color: rgb(244, 96, 0);
 }
 
-#tab-features {
+#features_tab {
+  display: 'none';
   padding: 12px 16.8px;
 }
 
@@ -76,4 +77,15 @@ td {
   color: rgb(102, 102, 102);
   font-weight: 700;
   width: 232px;
+}
+
+#fitment_tab {
+  display: 'none';
+}
+
+#reviews_tab {
+  display: '';
+  margin: 0,0;
+  padding: 0,0;
+  border-width: 0;
 }

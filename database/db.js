@@ -5,7 +5,7 @@ var connection = mysql.createConnection(mysqlConfig);
 
 const getFeatures = function(productID) {
   return new Promise((resolve, reject) => {
-    connection.query('select description from features where product_id = ?', productID, (err, results) => {
+    connection.query('select description from features where productID = ?', productID, (err, results) => {
       if (err) {
         reject(err);
       } else {
@@ -17,7 +17,7 @@ const getFeatures = function(productID) {
 
 const getBenefits = function(productID) {
   return new Promise((resolve, reject) => {
-    connection.query('select description from benefits where product_id = ?', productID, (err, results) => {
+    connection.query('select description from benefits where productID = ?', productID, (err, results) => {
       if (err) {
         reject(err);
       } else {
@@ -29,7 +29,7 @@ const getBenefits = function(productID) {
 
 const getProductDetails = function(productID) {
   return new Promise((resolve, reject) => {
-    connection.query('select detail, description from product_details where product_id = ?', productID, (err, results) => {
+    connection.query('select detail, description from product_details where productID = ?', productID, (err, results) => {
       if (err) {
         reject(err);
       } else {

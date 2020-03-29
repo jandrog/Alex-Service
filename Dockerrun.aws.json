@@ -1,0 +1,11 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "jandrog/alex_service"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "8086"
+    }
+  ]
+}
