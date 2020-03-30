@@ -169,7 +169,7 @@ class FeaturesAndBenefits extends Component {
       <div>
         <ul className="tabs" onClick={ this.tabViewClick }>
           <li id='tab1' className="tab_default tab_selected">Features & Benefits</li>
-          <li id='tab2' className="tab_default tab_unselected">Vehicle Fitment</li>
+          {/* <li id='tab2' className="tab_default tab_unselected">Vehicle Fitment</li> */}
           <li id='tab3' className="tab_default tab_unselected">Reviews</li>
         </ul>
         <div>
@@ -177,9 +177,9 @@ class FeaturesAndBenefits extends Component {
             <Features features={ features } benefits={ benefits }/>
             <ProductDetails productDetails={ productDetails }/>
           </div>
-          <div id='fitment_tab'>
+          {/* <div id='fitment_tab'>
             <p>Fitment</p>
-          </div>
+          </div> */}
           <div id='reviews_tab'>
             <div id='reviewsComponent'></div>
           </div>
